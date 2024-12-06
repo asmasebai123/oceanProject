@@ -167,7 +167,21 @@ hr{
     min-width: 340px;
   }
 }
+.image-container {
+  margin: 0 0 0 30px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
 
+.image-container img {
+  object-fit: cover;
+  height: 35rem;
+  width: 30rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
 .price-description .highlight {
   font-size: 1.5rem; /* Taille plus grande pour mettre en avant l'essai gratuit */
   font-weight: bold; /* Rend le texte plus épais pour attirer l'attention */
