@@ -1,0 +1,49 @@
+<div animateComponentDirective class="cirs-container">
+  <div class="cir-row">
+    <div class="cirs-content">
+      <div animateComponentDirective class="cirs-header">
+       
+        <span class="key-cirs">La relation entre le système circulatoire du corps humain et l'océan</span>
+      </div>
+      <div class="cirs">
+        <div animateComponentDirective class="description">
+          <p>les deux systèmes, humain et marin, sont interconnectés par leur fonction de transport et d'échange de substances vitales, maintenant ainsi l'équilibre et la vie dans leurs environnements respectifs.</p>
+        </div>
+        <div animateComponentDirective class="cir-cards">
+          <div [ngClass]="{'cir-card-selected':isClicked.get('1'),'cir-card':!isClicked.get('1')}" (click)="changecirCardNumber(1)">
+            
+            <span>Régulation thermique :</span>
+          </div>
+          <div [ngClass]="{'cir-card-selected':isClicked.get('2'),'cir-card':!isClicked.get('2')}" (click)="changecirCardNumber(2)">
+            
+            <span>Filtration et purification :</span>
+          </div>
+          <div [ngClass]="{'cir-card-selected':isClicked.get('3'),'cir-card':!isClicked.get('3')}" (click)="changecirCardNumber(3)">
+            
+            <span>Écosystèmes et organes vitaux :
+
+            </span>
+          </div>
+          <div [ngClass]="{'cir-card-selected':isClicked.get('4'),'cir-card':!isClicked.get('4')}" (click)="changecirCardNumber(4)">
+            
+            <span>Réseaux de distribution :
+
+            </span>
+          </div>
+        </div>
+        <div animateComponentDirective class="cir-description">
+          <p *ngIf="cirCardNumber === 1" style="text-align: justify;">
+            Ces exemples montrent comment des systèmes variés dans la nature et la société fonctionnent sur des principes similaires à ceux du système circulatoire humain, mettant en évidence des réseaux essentiels de transport et de régulation.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <div animateComponentDirective class="image-container">
+      <img *ngIf="cirCardNumber === 1"  src="assets/images/chaleur.jpg">
+      <img *ngIf="cirCardNumber === 2"  src="assets/images/transport.jpg">
+      <img *ngIf="cirCardNumber === 3"  src="assets/images/racine.jpg">
+      <img *ngIf="cirCardNumber === 4"  src="assets/images/sangs.avif">
+    </div>
+  </div>
+</div>

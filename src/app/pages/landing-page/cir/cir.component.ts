@@ -3,18 +3,18 @@ import {NgClass, NgIf} from "@angular/common";
 import {AnimateComponentDirective} from "../../../animate-component-directive";
 
 @Component({
-  selector: 'app-advantages',
+  selector: 'app-cir',
   standalone: true,
   imports: [
     NgIf,
     NgClass,
     AnimateComponentDirective
   ],
-  templateUrl: './advantages.component.html',
-  styleUrl: './advantages.component.scss'
+  templateUrl: './cir.component.html',
+  styleUrl: './cir.component.scss'
 })
-export class AdvantagesComponent {
-  advantageCardNumber :number = 1;
+export class CirComponent {
+  cirCardNumber :number = 1;
   isClicked: Map<string, boolean>
   constructor() {
     const initialStates = {
@@ -26,8 +26,8 @@ export class AdvantagesComponent {
     this.isClicked = new Map(Object.entries(initialStates));
   }
 
-  changeAdvantageCardNumber(cardNumber: number) {
-    this.advantageCardNumber = cardNumber;
+  changecirCardNumber(cardNumber: number) {
+    this.cirCardNumber = cardNumber;
     this.isClicked.forEach((value, key,map) => map.set(key,false));
     this.isClicked.set(String(cardNumber),!this.isClicked.get(String(cardNumber)))
   }

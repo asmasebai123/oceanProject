@@ -1,22 +1,22 @@
-.advantages-container{
+.cirs-container{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 160px;
+  padding-top: 200px;
 }
-.advantage-row{
+.cir-row{
   display: flex;
   flex-direction: row;
   max-width: 1200px;
 }
-.advantages-content{
+.cirs-content{
 }
-.advantages-header{
+.cirs-header{
   transform: translateY(70px);
   opacity: 0;
   transition: transform 0.5s ease;
 }
-.advantages-title{
+.cirs-title{
   color: #38abf8;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -26,17 +26,17 @@
   opacity: 0;
   transition: transform 0.5s ease;
 }
-.key-advantages{
+.key-cirs{
   font-size: 3rem;
   font-weight: bold;
   color: #02016f;
   //margin-bottom: 0.5rem;
 }
-.advantages{
+.cirs{
   margin: 1rem 0;
   line-height: 1.5;
 }
-.advantage-cards{
+.cir-cards{
   display:flex;
   flex-direction: row;
   margin: 3rem 0;
@@ -44,7 +44,7 @@
   opacity: 0;
   transition: transform 0.5s ease;
 }
-.advantage-card{
+.cir-card{
   background-color: white;
   cursor: pointer;
   border-radius: 1rem;
@@ -54,7 +54,7 @@
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
   transition:0.3s;
 }
-.advantage-card-selected{
+.cir-card-selected{
   cursor: pointer;
   background-color: #38abf8;
   color: white;
@@ -64,29 +64,29 @@
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
-.advantage-card:hover{
+.cir-card:hover{
   background-color: #38abf8;
   color: white;
   transform: scale(0.9);
 }
-.advantage-card:hover i.advantage-icon{
+.cir-card:hover i.cir-icon{
   color: white;
 }
-.advantage-icon{
+.cir-icon{
   font-size: 3rem;
   color: #38abf8;
 }
-.advantage-icon-selected{
+.cir-icon-selected{
   font-size: 3rem;
   color: white;
 }
-.advantage-icon-decision{
+.cir-icon-decision{
   margin-top: -10px;
   margin-bottom: 10px;
   height:4.5rem;
   width:4.5rem;
 }
-.advantage-description{
+.cir-description{
   //border: 2px solid #d8f2f5;
   //border-radius:1rem;
   //padding: 10px;
@@ -96,7 +96,7 @@
   opacity: 0;
   transition: transform 0.5s ease;
 }
-.advantage-title{
+.cir-title{
   color: #02016f;
   font-weight: bold;
 }
@@ -117,34 +117,34 @@
 }
 
 @media screen and (max-width:450px) {
-  .key-advantages{
+  .key-cirs{
     font-size: 1.8rem;
   }
-  .advantages-container{
+  .cirs-container{
     display: unset;
   }
-  .advantage-cards{
+  .cir-cards{
     flex-wrap: wrap;
     justify-content: center;
   }
-  .advantage-cards .advantage-card{
+  .cir-cards .cir-card{
     flex: 0 0 40%;
     margin: 0.8rem;
   }
-  .advantage-cards .advantage-card-selected{
+  .cir-cards .cir-card-selected{
     flex: 0 0 40%;
     margin: 0.8rem;
   }
   .image-container{
     display: none;
   }
-  .advantages-header{
+  .cirs-header{
     margin: 0 25px;
   }
   .description{
     margin-left: 25px;
   }
-  .advantage-description{
+  .cir-description{
     margin-left: 25px;
     padding-right: 25px;
   }

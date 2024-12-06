@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductivityComponent } from './productivity.component';
+import { CirComponent } from './cir.component';
 
-describe('ProductivityComponent', () => {
-  let component: ProductivityComponent;
-  let fixture: ComponentFixture<ProductivityComponent>;
+describe('CirComponent', () => {
+  let component: CirComponent;
+  let fixture: ComponentFixture<CirComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProductivityComponent]
+      imports: [CirComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ProductivityComponent);
+    fixture = TestBed.createComponent(CirComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
