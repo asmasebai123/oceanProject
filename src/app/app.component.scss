@@ -56,12 +56,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  margin: -20px 0 140px 0;
+  position: relative;
+  top:-200px;
+
+
 }
 
 .app-screen-shot {
-  max-width: 1250px;
+  max-width: 1000px;
   border-radius: 1rem;
   z-index: 3;
   display: block;
@@ -76,7 +78,7 @@
 
 }
 .bank-card-img:hover{
-  transform:  translateX(70%) translateY(-50%) rotate(-5deg);
+  transform:  translateX(50%) translateY(-20%) rotate(-5deg);
 }
 
 @media screen and (max-width:450px) {
@@ -98,6 +100,7 @@
     transform:  translateX(25%) translateY(-100%) rotate(-5deg);
   }
   .image-container{
-    margin-top:8rem;
+    margin-top:3rem;
+    top:-70px
   }
 }
