@@ -6,7 +6,7 @@ import {CompaniesComponent} from "./pages/landing-page/companies/companies.compo
 import {FunctionalitiesComponent} from "./pages/landing-page/functionalities/functionalities.component";
 import {IntroductionComponent} from "./pages/landing-page/introduction/introduction.component";
 import {AdvantagesComponent} from "./pages/landing-page/advantages/advantages.component";
-import {PricingComponent} from "./pages/landing-page/pricing/pricing.component";
+import {SaliniteComponent} from "./pages/landing-page/salinite/salinite.component";
 import {StatisticsComponent} from "./pages/landing-page/statistics/statistics.component";
 import {DemoComponent} from "./pages/landing-page/demo/demo.component";
 import {FooterComponent} from "./pages/landing-page/footer/footer.component";
@@ -30,16 +30,16 @@ import { MessageService } from 'primeng/api';
     FunctionalitiesComponent,
     IntroductionComponent,
     AdvantagesComponent,
-    PricingComponent,
+    SaliniteComponent,
     StatisticsComponent,
     DemoComponent,
-    FooterComponent, 
+    FooterComponent,
     EnterpriseComponent,
-     ProductivityComponent, 
-     AiComponent, 
-     IntegrationsComponent, 
-     ContactComponent,
-     ToastModule,
+    ProductivityComponent,
+    AiComponent,
+    IntegrationsComponent,
+    ContactComponent,
+    ToastModule,
     ConnexionComponent],
   providers: [MessageService],
   templateUrl: './app.component.html',

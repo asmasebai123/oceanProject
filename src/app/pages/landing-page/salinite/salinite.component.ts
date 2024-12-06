@@ -3,16 +3,16 @@ import {NgIf} from "@angular/common";
 import {AnimateComponentDirective} from "../../../animate-component-directive";
 
 @Component({
-  selector: 'app-pricing',
+  selector: 'app-salinite',
   standalone: true,
   imports: [
     NgIf,
     AnimateComponentDirective
   ],
-  templateUrl: './pricing.component.html',
-  styleUrl: './pricing.component.scss'
+  templateUrl: './salinite.component.html',
+  styleUrl: './salinite.component.scss'
 })
-export class PricingComponent {
+export class SaliniteComponent {
   //payment mothod anually => paymentMethod == false
   paymentMethod: boolean = false;
 

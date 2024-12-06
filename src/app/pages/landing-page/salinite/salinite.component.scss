@@ -1,0 +1,56 @@
+
+.salinite-row{
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 10px;
+}
+.image-container {
+  margin: 0 0 0 30px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+
+.image-container img {
+  object-fit: cover;
+  height: 35rem;
+  width: 30rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
+.salinites-content{
+  padding: 10px;
+  margin-left: 25px;
+}
+.salinites-header{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.salinites-title{
+  color: #38abf8;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.key-salinites{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #02016f;
+  //margin-bottom: 0.5rem;
+}
+.description{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+  margin-top: 20px;
+  background-color: rgb(213, 240, 255);
+  padding: 20px;
+  border-radius: 20px;
+}
+.parag{
+  font-family: Helvetica;
+  font-size: 18px;
+}
