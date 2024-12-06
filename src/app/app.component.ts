@@ -6,13 +6,12 @@ import {CompaniesComponent} from "./pages/landing-page/companies/companies.compo
 import {FunctionalitiesComponent} from "./pages/landing-page/functionalities/functionalities.component";
 import {IntroductionComponent} from "./pages/landing-page/introduction/introduction.component";
 import {AdvantagesComponent} from "./pages/landing-page/advantages/advantages.component";
-import {SaliniteComponent} from "./pages/landing-page/salinite/salinite.component";
 import {StatisticsComponent} from "./pages/landing-page/statistics/statistics.component";
 import {DemoComponent} from "./pages/landing-page/demo/demo.component";
 import {FooterComponent} from "./pages/landing-page/footer/footer.component";
 import { Subscription, timeout } from 'rxjs';
 import {SharedService} from "./services/shared.service";
-import {EnterpriseComponent} from "./pages/landing-page/enterprise/enterprise.component";
+import {BonesComponent} from "./pages/landing-page/bones/bones.component";
 import {ProductivityComponent} from "./pages/landing-page/productivity/productivity.component";
 import {AiComponent} from "./pages/landing-page/ai/ai.component";
 import {IntegrationsComponent} from "./pages/landing-page/integrations/integrations.component";
@@ -20,6 +19,7 @@ import {ContactComponent} from "./pages/landing-page/contact/contact.component";
 import { ConnexionComponent } from './pages/landing-page/connexion/connexion.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { SaliniteComponent } from './pages/landing-page/salinite/salinite.component';
 
 @Component({
   selector: 'app-root',
@@ -30,17 +30,17 @@ import { MessageService } from 'primeng/api';
     FunctionalitiesComponent,
     IntroductionComponent,
     AdvantagesComponent,
-    SaliniteComponent,
     StatisticsComponent,
     DemoComponent,
     FooterComponent,
-    EnterpriseComponent,
+    BonesComponent,
     ProductivityComponent,
     AiComponent,
     IntegrationsComponent,
     ContactComponent,
     ToastModule,
-    ConnexionComponent],
+    ConnexionComponent,
+    SaliniteComponent],
   providers: [MessageService],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

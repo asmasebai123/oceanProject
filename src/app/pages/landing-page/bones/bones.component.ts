@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
 import {AnimateComponentDirective} from "../../../animate-component-directive";
-import {NgIf} from "@angular/common";
 
 @Component({
-  selector: 'app-enterprise',
+  selector: 'app-bones',
   standalone: true,
     imports: [
         AnimateComponentDirective,
-        NgIf
     ],
-  templateUrl: './enterprise.component.html',
-  styleUrl: './enterprise.component.scss'
+  templateUrl: './bones.component.html',
+  styleUrl: './bones.component.scss'
 })
-export class EnterpriseComponent {
+export class BonesComponent {
 
 }

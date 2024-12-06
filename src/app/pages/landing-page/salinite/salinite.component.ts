@@ -13,11 +13,8 @@ import {AnimateComponentDirective} from "../../../animate-component-directive";
   styleUrl: './salinite.component.scss'
 })
 export class SaliniteComponent {
-  //payment mothod anually => paymentMethod == false
-  paymentMethod: boolean = false;
 
-setPaymentMethod(method : string) {
-this.paymentMethod = method === 'annual'? false : true;
+setPaymentMethod() {
 }
 
 }
