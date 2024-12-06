@@ -1,104 +1,9 @@
-.advantages-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 160px;
-}
-.advantage-row{
+
+.salinite-row{
   display: flex;
   flex-direction: row;
   max-width: 1200px;
-}
-.advantages-content{
-}
-.advantages-header{
-  transform: translateY(70px);
-  opacity: 0;
-  transition: transform 0.5s ease;
-}
-.advantages-title{
-  color: #38abf8;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-.description{
-  transform: translateY(70px);
-  opacity: 0;
-  transition: transform 0.5s ease;
-}
-.key-advantages{
-  font-size: 3rem;
-  font-weight: bold;
-  color: #02016f;
-  //margin-bottom: 0.5rem;
-}
-.advantages{
-  margin: 1rem 0;
-  line-height: 1.5;
-}
-.advantage-cards{
-  display:flex;
-  flex-direction: row;
-  margin: 3rem 0;
-  transform: translateY(70px);
-  opacity: 0;
-  transition: transform 0.5s ease;
-}
-.advantage-card{
-  background-color: white;
-  cursor: pointer;
-  border-radius: 1rem;
-  width : 150px;
-  padding: 1rem;
-  color: #02016f;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
-  transition:0.3s;
-}
-.advantage-card-selected{
-  cursor: pointer;
-  background-color: #38abf8;
-  color: white;
-  border-radius: 1rem;
-  width : 150px;
-  padding: 1rem;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-.advantage-card:hover{
-  background-color: #38abf8;
-  color: white;
-  transform: scale(0.9);
-}
-.advantage-card:hover i.advantage-icon{
-  color: white;
-}
-.advantage-icon{
-  font-size: 3rem;
-  color: #38abf8;
-}
-.advantage-icon-selected{
-  font-size: 3rem;
-  color: white;
-}
-.advantage-icon-decision{
-  margin-top: -10px;
-  margin-bottom: 10px;
-  height:4.5rem;
-  width:4.5rem;
-}
-.advantage-description{
-  //border: 2px solid #d8f2f5;
-  //border-radius:1rem;
-  //padding: 10px;
-  //height: 130px;
-  //box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.1);
-  transform: translateY(70px);
-  opacity: 0;
-  transition: transform 0.5s ease;
-}
-.advantage-title{
-  color: #02016f;
-  font-weight: bold;
+  padding: 10px;
 }
 .image-container {
   margin: 0 0 0 30px;
@@ -115,37 +20,37 @@
   box-shadow: 0 4px 20px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease;
 }
+.salinites-content{
+  padding: 10px;
+  margin-left: 25px;
+}
+.salinites-header{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.salinites-title{
+  color: #38abf8;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
-@media screen and (max-width:450px) {
-  .key-advantages{
-    font-size: 1.8rem;
-  }
-  .advantages-container{
-    display: unset;
-  }
-  .advantage-cards{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .advantage-cards .advantage-card{
-    flex: 0 0 40%;
-    margin: 0.8rem;
-  }
-  .advantage-cards .advantage-card-selected{
-    flex: 0 0 40%;
-    margin: 0.8rem;
-  }
-  .image-container{
-    display: none;
-  }
-  .advantages-header{
-    margin: 0 25px;
-  }
-  .description{
-    margin-left: 25px;
-  }
-  .advantage-description{
-    margin-left: 25px;
-    padding-right: 25px;
-  }
+.key-salinites{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #02016f;
+  //margin-bottom: 0.5rem;
+}
+.description{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+  margin-top: 20px;
+  background-color: rgb(213, 240, 255);
+  padding: 20px;
+  border-radius: 20px;
+}
+.parag{
+  font-family: Helvetica;
+  font-size: 18px;
 }
