@@ -1,4 +1,5 @@
 .navBar{
+  width: 100vw;
   margin: 0 auto;
   padding: 1rem 1rem;
   position: fixed;
@@ -14,6 +15,7 @@
   display: none;
 }
 .navBar-content{
+  max-width:2400px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
