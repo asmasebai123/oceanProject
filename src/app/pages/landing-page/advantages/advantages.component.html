@@ -2,63 +2,48 @@
   <div class="advantage-row">
     <div class="advantages-content">
       <div animateComponentDirective class="advantages-header">
-        <span class="advantages-title">POINTS FORTS</span><br><br><br>
-        <span class="key-advantages">Découvrez les Avantages de Notre Solution</span>
+       
+        <span class="key-advantages">La relation entre le système circulatoire du corps humain et l'océan</span>
       </div>
       <div class="advantages">
         <div animateComponentDirective class="description">
-          <p>Nous nous efforçons de vous offrir une solution SaaS exceptionnelle qui simplifie votre quotidien et propulse votre activité vers de nouveaux sommets.</p>
+          <p>les deux systèmes, humain et marin, sont interconnectés par leur fonction de transport et d'échange de substances vitales, maintenant ainsi l'équilibre et la vie dans leurs environnements respectifs.</p>
         </div>
         <div animateComponentDirective class="advantage-cards">
           <div [ngClass]="{'advantage-card-selected':isClicked.get('1'),'advantage-card':!isClicked.get('1')}" (click)="changeAdvantageCardNumber(1)">
-            <i class="pi pi-clock feature-icon" [ngClass]="{'advantage-icon-selected':isClicked.get('1'),'advantage-icon':!isClicked.get('1')}"></i><br><br><br>
-            <span>Gain de Temps</span>
+            
+            <span>Régulation thermique :</span>
           </div>
           <div [ngClass]="{'advantage-card-selected':isClicked.get('2'),'advantage-card':!isClicked.get('2')}" (click)="changeAdvantageCardNumber(2)">
-            <i class="pi pi-chart-line feature-icon" [ngClass]="{'advantage-icon-selected':isClicked.get('2'),'advantage-icon':!isClicked.get('2')}"></i><br><br><br>
-            <span>Productivité Accrue</span>
+            
+            <span>Filtration et purification :</span>
           </div>
           <div [ngClass]="{'advantage-card-selected':isClicked.get('3'),'advantage-card':!isClicked.get('3')}" (click)="changeAdvantageCardNumber(3)">
-            <i class="pi pi-check-circle feature-icon" [ngClass]="{'advantage-icon-selected':isClicked.get('3'),'advantage-icon':!isClicked.get('3')}"></i><br><br><br>
-            <span>Prise de Décisions</span>
+            
+            <span>Écosystèmes et organes vitaux :
+
+            </span>
           </div>
           <div [ngClass]="{'advantage-card-selected':isClicked.get('4'),'advantage-card':!isClicked.get('4')}" (click)="changeAdvantageCardNumber(4)">
-            <i class="pi pi-lock feature-icon" [ngClass]="{'advantage-icon-selected':isClicked.get('4'),'advantage-icon':!isClicked.get('4')}"></i><br><br><br>
-            <span>Sécurité de Premier Ordre</span>
+            
+            <span>Réseaux de distribution :
+
+            </span>
           </div>
         </div>
         <div animateComponentDirective class="advantage-description">
           <p *ngIf="advantageCardNumber === 1" style="text-align: justify;">
-            <span class="advantage-title">Gain de Temps Précieux : </span><br>
-            Notre solution intuitive et nos fonctionnalités d'automatisation vous permettent d'économiser
-            des heures de travail, vous libérant ainsi pour vous concentrer sur les tâches essentielles à votre entreprise.
+            Ces exemples montrent comment des systèmes variés dans la nature et la société fonctionnent sur des principes similaires à ceux du système circulatoire humain, mettant en évidence des réseaux essentiels de transport et de régulation.
           </p>
-          <p *ngIf="advantageCardNumber === 2" style="text-align: justify;">
-            <span class="advantage-title">Productivité Accrue : </span><br>
-            Grâce à la collaboration en temps réel, aux outils d'analyse avancés et à l'automatisation
-            des tâches récurrentes, notre solution vous aide à accomplir plus en moins de temps, stimulant
-            ainsi la productivité de votre équipe.
-          </p>
-          <p *ngIf="advantageCardNumber === 3" style="text-align: justify;">
-            <span class="advantage-title">Prise de Décisions Éclairées : </span><br>
-            Notre tableau de bord personnalisable et nos rapports analytiques détaillés vous
-            fournissent les données nécessaires pour prendre des décisions stratégiques éclairées,
-            vous permettant ainsi de piloter votre entreprise vers le succès.
-          </p>
-          <p *ngIf="advantageCardNumber === 4" style="text-align: justify;">
-            <span class="advantage-title">Sécurité de Premier Ordre : </span><br>
-            Vos données sont notre priorité.
-            Avec des mesures de sécurité avancées et un respect strict de la confidentialité,
-            vous pouvez être assuré que vos informations sont entre de bonnes mains.
-          </p>
+          
         </div>
       </div>
     </div>
     <div animateComponentDirective class="image-container">
-      <img *ngIf="advantageCardNumber === 1"  src="assets/images/Avantages/1.jpg">
-      <img *ngIf="advantageCardNumber === 2"  src="assets/images/Avantages/2.jpg">
-      <img *ngIf="advantageCardNumber === 3"  src="assets/images/Avantages/3.jpg">
-      <img *ngIf="advantageCardNumber === 4"  src="assets/images/Avantages/4.jpg">
+      <img *ngIf="advantageCardNumber === 1"  src="assets/images/chaleur.jpg">
+      <img *ngIf="advantageCardNumber === 2"  src="assets/images/transport.jpg">
+      <img *ngIf="advantageCardNumber === 3"  src="assets/images/racine.jpg">
+      <img *ngIf="advantageCardNumber === 4"  src="assets/images/sangs.avif">
     </div>
   </div>
 </div>
