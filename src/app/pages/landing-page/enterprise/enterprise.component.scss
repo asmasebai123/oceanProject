@@ -1,0 +1,126 @@
+.enterprise-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 160px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.enterprise-row{
+  display: flex;
+  max-height : 500px
+}
+.enterprise-title{
+  color: #38abf8;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.enterprise-content{
+  background-color: white;
+  border: 1px solid #38abf8;
+  height: 500px;
+  width: 600px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.entreprise-title{
+  color: #38abf8;
+  font-weight: bold;
+  margin-bottom: 1rem;
+
+}
+.enterprise-text-container{
+  padding:30px;
+  text-align: center;
+}
+.app-name{
+  font-size: 3rem;
+  background: linear-gradient(270deg, #0e91e9, #38abf8, #0e91e9, #0278c7, #7dc9fc);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 8s ease infinite;
+}
+.demo-title{
+  font-size: 3rem;
+  color: #02016f;
+}
+.enterprise-description{
+  margin-top: 40px;
+  color: #02016f;
+  font-size: 1.2rem;
+}
+.image-container{
+  margin-top:70px;
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  text-align: center;
+}
+.enterprise-image{
+  object-fit: cover;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+
+}
+.enterprise-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 250px;
+  background-color: #e0f2fe;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: #02016f;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.enterprise-button:hover{
+  background-color: #bae2fd;
+}
+
+@media screen and (max-width:450px) {
+  .enterprise-container{
+    display: unset;
+  }
+  .enterprise-title{
+    text-align:center;
+  }
+  .image-container{
+    display: none;
+  }
+  .demo-title{
+    font-weight:bold;
+    font-size: 1.8rem;
+  }
+  .app-name{
+    font-size: 1.8rem;
+  }
+  .enterprise-content{
+    border-radius: 1rem;
+    margin: 0 25px;
+    height: unset;
+  }
+  .enterprise-row{
+    max-height: unset;
+  }
+  .enterprise-button-container{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .enterprise-description{
+    margin-top: 20px;
+    color: #02016f;
+    font-size: 1.2rem;
+  }
+}

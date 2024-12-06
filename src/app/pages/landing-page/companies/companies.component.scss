@@ -1,0 +1,43 @@
+.companies-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0 0px 0;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.trust-companies{
+  margin : 2rem
+}
+.company-text{
+  color: #195f71;
+}
+.trust-companies-column{
+  display: flex;
+  justify-content: space-between;
+}
+.company-logo{
+  margin: 2rem 4rem;
+}
+@media screen and (max-height:830px) {
+  .companies-container{
+    margin-top: 10rem;
+  }
+}
+@media screen and (max-width:450px) {
+  .companies-container{
+    text-align: center;
+  }
+  .trust-companies-column {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .trust-companies-column .company-logo {
+    flex: 0 0 20%; /* Adjust percentage to ensure proper spacing */
+    margin: 0.8rem; /* Adjust as needed for spacing */
+  }
+  .company-text{
+    margin: 0 25px;
+  }
+}

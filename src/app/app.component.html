@@ -1,0 +1,28 @@
+
+<div id="zenitease" class="main-container" [style]="showLandingPage ? 'display: none;': ''">
+  <p-toast [life]="10000"  />
+  <app-nav-bar style="position: fixed;top: 0;z-index: 200;" (newItemEvent)="showLogin()"></app-nav-bar>
+  <div class="landing-page" style="background-color: #e3eaea;">
+    <div class="second-container">
+      <app-introduction></app-introduction>
+      <div class="image-container">
+        <img class="bank-card-img" src="assets/images/hopa3.png">
+        <img class="app-screen-shot" src="assets/images/Maquette1.png">
+      </div>
+      <app-companies></app-companies>
+      <app-functionalities id="fonctionnalités" style="margin-top: 50px;"></app-functionalities>
+      <app-advantages id="avantages"></app-advantages>
+      <app-pricing id="tarification"></app-pricing>
+      <app-enterprise id="entreprise"></app-enterprise>
+      <app-statistics id="section-6"></app-statistics>
+      <app-productivity></app-productivity>
+      <app-ai></app-ai>
+      <app-integrations></app-integrations>
+      <app-contact id="contact"></app-contact>
+      <app-demo id="demo"></app-demo>
+      <app-footer></app-footer>
+    </div>
+  </div>
+
+</div>
+<app-connexion (hideConnexionPage)="hideConnexionPage($event)"  [style]="!showLandingPage ? 'display: none;': ''"></app-connexion>

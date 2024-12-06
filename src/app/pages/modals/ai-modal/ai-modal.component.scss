@@ -1,0 +1,58 @@
+.ai-modal-container {
+  background-color: rgba(213, 213, 213, 0.8); /* Fond semi-transparent */
+  position: fixed; /* Position fixée pour occuper toute la fenêtre */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Flex pour centrer le contenu */
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; /* Z-index élevé pour être au-dessus du reste du contenu */
+}
+
+.ai-modal-content {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 80%; /* Largeur maximale de la modale */
+  max-height: 80%; /* Hauteur maximale de la modale */
+  overflow-y: auto; /* Défilement vertical si le contenu dépasse */
+}
+
+.ai-modal-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ai-modal-image {
+  margin-left: 30px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.ai-modal-text {
+  margin-left: 40px;
+  text-align: justify;
+  max-width: 720px;
+}
+.ai-modal-text li{
+  margin-top: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 30px;
+  height: 100%;
+}
+

@@ -1,0 +1,19 @@
+<nav class="navBar" [ngClass]="{'scrolled':isScrolled}">
+  <div class="navBar-content">
+    <div class="logo">
+      <img src="/assets/images/logo/ocean.png" alt="logo" class="logo-img">
+      <a (click)="navigateToSection('zenitease')" class="logo-span">l'ocean et le corps       humain</a>
+    </div>
+    <div class="spacer"></div>
+    <div class="desktop-menu">
+      <a class="desk-top-menu-item" (click)="navigateToSection('fonctionnalités')" >Système circulatoir</a>
+      <a class="desk-top-menu-item" (click)="navigateToSection('avantages')" >échanges gazeux</a>
+      <a class="desk-top-menu-item" (click)="navigateToSection('tarification')" >globules rouges</a>
+      <a class="desk-top-menu-item" (click)="navigateToSection('entreprise')" >squelette humain</a>
+      <a class="desk-top-menu-item" (click)="navigateToSection('contact')" >equilibre electrolytique</a>
+    </div>
+    
+  </div>
+</nav>
+
+

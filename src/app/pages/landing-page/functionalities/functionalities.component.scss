@@ -1,0 +1,132 @@
+.functionalities-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top:160px
+}
+.content{
+  max-width: 1200px;
+}
+.functionalities-header{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.functionalities-title{
+  color: #38abf8;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.key-features{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #02016f;
+  margin-bottom: 1rem;
+}
+.features{
+  margin: 4rem 0;
+  line-height: 1.5;
+}
+.feature-column{
+  display: flex;
+  margin-top: 2rem;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.feature{
+  max-width: 12rem;
+  margin : 0 8rem 0 0;
+  align-items: center;
+  justify-content: center;
+}
+.final-feature{
+  max-width: 12rem;
+  align-items: center;
+  justify-content: center;
+}
+.feature-icon {
+  height: 4rem;
+  width: 4rem;
+  font-size: 2rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.feature-title{
+  color: #0362a1;
+  font-weight: 550;
+  margin-top: 1rem;
+}
+.feature-description{
+  margin-top: 1rem;
+  color: #02016f;
+}
+
+@keyframes openFolder {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-180deg);
+  }
+}
+
+.folder-icon {
+  display: inline-block;
+  width: 24px; /* Adjust icon width */
+  height: 24px; /* Adjust icon height */
+  transition: transform 0.3s ease; /* Add transition for move effect */
+}
+
+.folder-icon:hover {
+  animation: openFolder 0.5s ease forwards; /* Apply animation on hover */
+}
+.title-description{
+  color:#656565;
+}
+
+@media screen and (max-width:450px) {
+  .functionalities-container{
+    display: unset;
+    margin: auto;
+    padding-top:100px
+  }
+  .functionalities-header{
+    margin: 0 25px;
+  }
+  .key-features{
+    font-size: 1.8rem;
+  }
+  .feature-column {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature-column .feature{
+    flex: 0 0 40%;
+    margin: 0.8rem;
+  }
+  .feature-column .final-feature{
+    flex: 0 0 40%;
+    margin: 0.8rem;
+  }
+  .feature{
+    margin : 0 3rem 0 0;
+    width: 12rem;
+  }
+  .final-feature{
+    width: 12rem;
+    margin-top: 0.7rem;
+  }
+}

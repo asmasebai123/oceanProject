@@ -1,0 +1,134 @@
+.intro-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.content {
+  min-width: 1100px;
+  z-index: 2!important;
+  margin-top: 10rem;
+  color: #02016f;
+}
+.welcome-text{
+  font-size: 5rem;
+}
+// .project-name{
+//   color: #5c6fff;
+// }
+
+// .project-name {
+//   background: -webkit-linear-gradient(#5C6FFF, #A8BFFF);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+// }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.project-name {
+  background: linear-gradient(270deg, #0e91e9, #38abf8, #0e91e9, #0278c7, #7dc9fc);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 8s ease infinite;
+}
+
+.log-in-button {
+   transition: 0.3s;
+   height: 3rem;
+   border: none;
+   padding: 0 1rem;
+   border-radius: 1rem;
+   cursor: pointer;
+   background: linear-gradient(270deg, #5C6FFF, #A8BFFF, #5C6FFF);
+   background-size: 600% 600%;
+   color: white;
+   border-radius: 0.5rem;
+   font-weight: bold;
+   animation: gradient-animation 5s ease infinite;
+}
+
+
+
+.under-welcome{
+  margin-top: 0.5rem;
+}
+.intro-buttons{
+  display: flex;
+  max-width: 500px;
+  margin-top: 4rem;
+  margin-left: 0;
+}
+.spacer {
+  flex: 1;
+}
+.free-button{
+  transition: 0.3s;
+  height: 3rem;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #0e91e9;
+  background-size: 600% 600%;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0;
+  width: 15rem;
+  animation: gradientAnimation 10s ease infinite;
+}
+.free-button:hover{
+  box-shadow: -4px 4px 0 0 #0362a1;
+  transform: translate(3px, -3px);
+}
+@keyframes gradientAnimation {
+  0%{background-position:0% 4%}
+  50%{background-position:100% 97%}
+  100%{background-position:0% 4%}
+}
+.demo-button{
+  width: 15rem;
+  background-color: #e0f2fe;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: #02016f;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.demo-button:hover{
+  background-color: #bae2fd;
+}
+@media screen and (max-width:450px) {
+  .content{
+    min-width: auto;
+    margin-top: 8rem;
+    margin-left:25px;
+  }
+  .spacer{
+    flex: 0.5;
+  }
+  .free-button{
+    width: 10rem;
+  }
+  .demo-button{
+    width: 10rem;
+  }
+  .welcome-text{
+    font-size: 3.2rem;
+  }
+}
+
+

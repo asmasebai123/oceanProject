@@ -1,0 +1,33 @@
+<div  class="connexion-container">
+    <div class="connexion-row">
+      <div  class="image-container">
+        <img class="connexion-image" src="assets/images/connexion.jpg">
+      </div>
+      <div  class="connexion-content">
+        <div class="logo">
+            <img src="/assets/images/logo/ZENITEASE_LOGO.png" alt="logo" class="logo-img">
+            <a class="logo-span">ZenitEase</a>
+        </div>
+        <div class="connexion-header">
+          <span class="connexion-title">Bienvenue !</span><br><br>
+          <span class="connexion-subtitle">Inscrivez-vous ou connectez-vous en entrant votre email ci-dessous</span>
+        </div>
+        <div class="connexion-button-container">
+            <button class="connexion-button"><img style="width: 1rem; height: 1rem; transform: translateY(3px) translateX(-10px);" src="/assets/icons/google.png">Continuez avec Google </button>
+        </div>
+        <div class="connexion-button-container">
+            <button class="connexion-button-botom"><img style="width: 1rem; height: 1rem; transform: translateY(3px) translateX(-10px);" src="/assets/icons/microsoft.png" >Continuez avec Microsoft </button>
+        </div>
+        <div class="divider">
+            <span>ou</span>
+        </div>
+        <div class="form-field">
+            <input (ngModelChange)="checkEmail($event)" placeholder="Email" type="email" id="enterpriseEmail" name="enterpriseEmail" [(ngModel)]="email" [matTooltip]="!validEmail? 'Remplissez votre Addresse mail!':''">
+        </div>
+        <div class="connexion-button-container">
+            <button class="login-button" (click)="login()">Continuez</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

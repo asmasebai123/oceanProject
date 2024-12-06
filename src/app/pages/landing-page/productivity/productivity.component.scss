@@ -1,0 +1,109 @@
+.productivity-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 140px 0 0  auto;
+}
+.productivity-content{
+  text-align: center;
+  max-width: 1200px;
+}
+.productivity-title{
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.key-productivity{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #02016f;
+  margin-bottom: 1rem;
+}
+.app-name{
+  font-size: 4rem;
+  background: linear-gradient(270deg, #0e91e9, #38abf8, #0e91e9, #0278c7, #7dc9fc);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 8s ease infinite;
+}
+.title-description{
+  margin-top: 40px;
+  color:#656565;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.productivity-cards{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: transform 0.5s ease;
+}
+.productivity-card{
+  max-width: 16rem;
+  align-items: left;
+}
+.card-image{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.card-title{
+  margin-top: 1.2rem;
+  text-align: left;
+  color:#656565;
+  font-size: 0.8rem;
+}
+.card-subtitle{
+  max-width: 20rem;
+  margin-top: 1rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #0278c7;
+}
+.card-description {
+  max-width: 20rem;
+  margin-top: 1.2rem;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // gap: 10px;
+}
+
+.card-description span {
+  display: block;
+}
+
+@media screen and (max-width:450px) {
+  .productivity-container{
+    display: unset;
+  }
+  .productivity-title{
+    margin: 0 25px;
+  }
+  .key-productivity{
+         font-size: 1.8rem;
+  }
+  .app-name{
+    font-size: 1.8rem;
+  }
+  .productivity-cards{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .productivity-card{
+    flex: 0 0 40%;
+    margin: 0.8rem;
+  }
+  .title-description{
+    margin: 25px 25px;
+  }
+}
